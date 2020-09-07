@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeeGlamz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/shortcuticon/favicon.ico" type="image/ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/shortcuticon/apple-touch-icon.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/shortcuticon/favicon-32x32.png" type="image/png">
+    <link rel="icon" sizes="16x16" href="img/shortcuticon/favicon-16x16.png" type="image/png">
+    <link rel="manifest" href="img/shortcuticon/site.webmanifest">
+    <script defer src="fontawesome-free-5.13.1-web/js/all.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+
+            <div id="bigscreen">
+                <img src="img/logoT.png" alt="Tee Glamz Makeup">
+                <ul>
+                    <li> <a href="index.html" class="active"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-file-image"></i>Portfolio</a></li>
+                    <li><a href="products.html"><i class="fas fa-shopping-cart"></i>Products</a></li>
+                    <li><a href="aboutus.html"><i class="fas fa-info-circle"></i>About Us</a></li>
+                </ul>
+                <div id="contact"><a href="http://api.whatsapp.com/send?phone=08108272935"><i class="fas fa-address-book"></i>Contact Us</a></div>
+            </div>
+            <div id="smallscreen">
+                <img src="img/logoT.png" alt="Tee Glamz Makeup">
+                <div class="toggle-btn">
+                    <i class="fas fa-bars" onclick="toggleBtn()"></i>
+                </div>
+                <div class="close-btn">
+                    <i class="fas fa-times" onclick="toggleBtn()"></i>
+                </div>
+                <div id="nav-area">
+                    <ul>
+                        <li> <a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="portfolio.html"><i class="fas fa-file-image"></i>Portfolio</a></li>
+                        <li><a href="products.html"><i class="fas fa-shopping-cart"></i>Products</a></li>
+                        <li><a href="aboutus.html"><i class="fas fa-info-circle"></i>About Us</a></li>
+                    </ul>
+                    <div id="contact"><a href="http://api.whatsapp.com/send?phone=08108272935"><i class="fas fa-address-book"></i>Contact Us</a></div>
+                </div>
+
+            </div>
+        </nav>
+        <header>
+            <div id="head">
+                <h1>WELCOME TO TEEGLAMZ</h1>
+                <p><em> Your Beauty is our priority</em></p>
+            </div>
+        </header>
+        <main>
+            <div class="elem">
+                <h2><span>Tee Glamz's Philosophy of Exquisite Makeup</span></h2>
+                <p>Here at Tee Glamz's, we know that good Makeup isn't just about how expensive it is. We're not pompous, we're proud. We're proud of our work, our quality, our environment, and our love for good makeup</p>
+                <p>We are also into sales of makeup products, original weaves, hair extensions and other beauty products</p>
+            </div>
+            <div class="elem">
+                <h2><span>Services</span></h2>
+                <p>We offer Top Notch services that compliment your look, such as:</p>
+                <div id="list">
+                    <ul>
+                        <li><span>Makeup Services</span></li>
+                        <li><span>Makeup & Beauty Products</span></li>
+                        <li><span>Gele Making </span></li>
+                        <li><span>Nails</span></li>
+                        <li><span>Gele & Makeup Training </span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="elem">
+                <h2><span>Social Media</span></h2>
+                <p> Follow us on our Various Social Media Platforms </p>
+                <div id="social">
+                    <ul>
+                        <li>
+                            <a href="http://www.facebook.com/Tee.glamz.TGZ" target="_blank"> <i class="fab fa-facebook-square"></i> Tee.glamz</a>
+                        </li>
+                        <li>
+                            <a href="http://www.instagram.com/tee.glamz" target="_blank"> <i class="fab fa-instagram-square"></i> Tee.glamz</a>
+                        </li>
+                        <li>
+                            <a href="http://api.whatsapp.com/send?phone=08108272935" target="_blank"> <i class="fab fa-whatsapp-square"></i> Tee Glamz</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"> <i class="fab fa-twitter-square"></i> @Tee_glamz</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+        <aside>
+            <div class="elem">
+                <h3><b>SUSCRIBE TO MY E-MAIL LIST TO GET LATEST MAKEUP TRICKS, STYLE AND PRODUCTS</b></h3>
+            </div>
+            <form method="POST" action="emaillist.php">
+                <label for="name"><b> <i class="fas fa-user" ></i> Name </b></label> <br>
+                <input type="text" name="name" id="name" placeholder="Jane Doe" required> <br><br>
+                <label for="email"><b> <i class="fas fa-envelope" ></i> E-mail</b></label> <br>
+                <input type="email" name="email" id="email" placeholder="JaneDoe@xyz.com" required> <br><br>
+                <button onclick="check();" name="submit">Subscribe</button>
+            </form>
+        </aside>
+        <footer><small id="credit1"> &copy; <script>document.write(new Date().getFullYear()) </script> &horbar;  Oladeji Tobi</small> <br>
+            <small id="credit2">Created with  <i class="fas fa-heart" style="color: red;" ></i>  by  Mister Ghost 
+                <i class="fas fa-ghost" ></i>   </small></footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
